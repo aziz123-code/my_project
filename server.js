@@ -6,6 +6,7 @@ const express = require('express')
 
 const app = express()
 app.use(cors())
+app.use(express.static('web')) 
 const port = process.env.PORT || 8080
 
 const client = new Client({
